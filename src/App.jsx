@@ -2,9 +2,9 @@ import "./App.css";
 
 function App() {
     const profile = {
-        name: "Kent Kawashima",
+        name: "Kent Kawashima.",
         tagline:
-            "As a Software Engineering major and AI enthusiast, I focus on transforming complex algorithmic logic into interactive reality. From developing probability-based text generators to simulating fullstack social ecosystems, I leverage my background in both systems programming and modern web technologies to solve intricate problems.",
+            "As a Software Engineering major balancing Fullstack and AI interest, I focus on narrowing down broad requirements to specific features. From developing probability-based text generators to launching fullstack ecosystems, I leverage my background in low-level programming and modern web technologies to solve intricate problems.",
         email: "kyukiokawa@gmail.com",
         links: {
             github: "https://github.com/kkawayuki?tab=repositories",
@@ -19,6 +19,7 @@ function App() {
                 "Probability-based text generation utilizing input stream and various data structures to optimize runtime performance",
             tech: ["C++", "GTest"],
             links: { code: "https://github.com/kkawayuki/AI-Text-Gen" },
+            img: "/src/assets/terminal.png",
         },
         {
             name: "Knight's Tour Solver",
@@ -26,6 +27,7 @@ function App() {
                 "Deterministic algorithm-based AI solver adapting to various dimensional permutations for the Knight's Tour puzzle",
             tech: ["C++", "GTest"],
             links: { code: "https://github.com/kkawayuki/KnightsTour" },
+            img: "/src/assets/horse.png",
         },
         {
             name: "Shared Sky",
@@ -36,6 +38,7 @@ function App() {
                 devpost: "https://devpost.com/software/2nd-degree",
                 code: "https://github.com/kkawayuki/2-degrees-REAL-",
             },
+            img: "/src/assets/ss5.png",
         },
         {
             name: "Blackjack",
@@ -46,6 +49,7 @@ function App() {
                 live: "https://blackjack-pearl-ten.vercel.app/",
                 code: "https://github.com/kkawayuki/Blackjack",
             },
+            img: "/src/assets/suits.png",
         },
     ];
 
@@ -60,7 +64,7 @@ function App() {
                     <a href="about">
                         <img
                             className="logo"
-                            src="/public/circle2.png"
+                            src="/src/assets/circle2.png"
                             aria-label="Home"
                         ></img>
                     </a>
@@ -99,10 +103,16 @@ function App() {
                                     className="card card-project"
                                     key={p.name}
                                 >
+                                    {/*
                                     <div
                                         className="project-preview"
                                         aria-hidden="true"
-                                    />
+                                    /
+                                    */}
+                                    <img
+                                        className="project-preview"
+                                        src={p.img}
+                                    ></img>
                                     <div className="project-top">
                                         <h3 className="card-title">{p.name}</h3>
                                         <div className="project-links">
@@ -116,16 +126,6 @@ function App() {
                                                     Live
                                                 </a>
                                             )}
-                                            {p.links.code && (
-                                                <a
-                                                    className="btn btn-ghost btn-sm"
-                                                    href={p.links.code}
-                                                    target="_blank"
-                                                    rel="noreferrer noopener"
-                                                >
-                                                    Code
-                                                </a>
-                                            )}
                                             {p.links.devpost && (
                                                 <a
                                                     className="btn btn-ghost btn-sm"
@@ -134,6 +134,16 @@ function App() {
                                                     rel="noreferrer noopener"
                                                 >
                                                     Devpost
+                                                </a>
+                                            )}
+                                            {p.links.code && (
+                                                <a
+                                                    className="btn btn-ghost btn-sm"
+                                                    href={p.links.code}
+                                                    target="_blank"
+                                                    rel="noreferrer noopener"
+                                                >
+                                                    Code
                                                 </a>
                                             )}
                                         </div>
@@ -167,32 +177,35 @@ function App() {
 
                         <div className="about-content">
                             <p>
-                                Currently, I’m deep-diving into the intersection
-                                of <strong>Frontend Engineering</strong> and
-                                <strong> Applied AI</strong>. My journey began
-                                with a fascination for how logic can be
-                                visualized, leading me to pursue a Software
-                                Engineering degree where I bridge the gap
+                                Currently, my interests converge at the
+                                intersection of{" "}
+                                <strong>Fullstack Engineering</strong> and
+                                <strong> Applied AI</strong>. I've always had a
+                                fascination with building a novel product,
+                                end-to-end and understanding the connections
+                                between, leading me to pursue a Software
+                                Engineering degree in which I bridge the gap
                                 between complex backend algorithms and intuitive
                                 user interfaces.
                             </p>
 
                             <p>
-                                When I'm not debugging C++ or tweaking React
-                                hooks, I spend a lot of my time experimenting
-                                with generative models and exploring how they
-                                can be leveraged to enhance developer
-                                productivity. I believe that the best software
-                                isn't just functional—it should be accessible
-                                and enjoyable to interact with.
+                                Recently, I've been spending a fair amount of
+                                time experimenting with generative models and
+                                exploring how they can be leveraged to enhance
+                                developer productivity. While I don't believe it
+                                can fully take the place of a experienced developer
+                                at the moment, I do believe that it can help
+                                facilitate rapid prototyping and greatly reduce
+                                time spent for example, styling an app.
                             </p>
 
                             <p>
-                                Based in my third year of study, I am actively
-                                looking for opportunities to collaborate on
-                                open-source projects or contribute to innovative
-                                teams that value clean code and creative
-                                problem-solving.
+                                Currently in my third year of study, I am
+                                actively looking for opportunities to contribute
+                                to teams that value methodical coding practices
+                                and emphasize a culture of learning and
+                                answering complex questions.
                             </p>
                         </div>
                     </div>
@@ -205,7 +218,7 @@ function App() {
                         </div>
                         <ul className="contact-list">
                             <li className="contact-row">
-                                <span className="contact-label">contact:</span>
+                                <span className="contact-label">email:</span>
                                 <a
                                     className="contact-link"
                                     href={`mailto:${profile.email}`}

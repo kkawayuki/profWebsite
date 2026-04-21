@@ -19,7 +19,7 @@ function App() {
                 "Probability-based text generation utilizing input stream and various data structures to optimize runtime performance",
             tech: ["C++", "GTest"],
             links: { code: "https://github.com/kkawayuki/AI-Text-Gen" },
-            img: "/src/assets/terminal.png",
+            img: "/terminal.png",
         },
         {
             name: "Knight's Tour Solver",
@@ -27,7 +27,7 @@ function App() {
                 "Deterministic algorithm-based AI solver adapting to various dimensional permutations for the Knight's Tour puzzle",
             tech: ["C++", "GTest"],
             links: { code: "https://github.com/kkawayuki/KnightsTour" },
-            img: "/src/assets/horse.png",
+            img: "/horse.png",
         },
         {
             name: "Shared Sky",
@@ -38,7 +38,7 @@ function App() {
                 devpost: "https://devpost.com/software/2nd-degree",
                 code: "https://github.com/kkawayuki/2-degrees-REAL-",
             },
-            img: "/src/assets/ss5.png",
+            img: "/ss5.png",
         },
         {
             name: "Blackjack",
@@ -49,7 +49,7 @@ function App() {
                 live: "https://blackjack-pearl-ten.vercel.app/",
                 code: "https://github.com/kkawayuki/Blackjack",
             },
-            img: "/src/assets/suits.png",
+            img: "/suits.png",
         },
     ];
 
@@ -64,7 +64,7 @@ function App() {
                     <a href="about">
                         <img
                             className="logo"
-                            src="/src/assets/circle2.png"
+                            src="/circle2.png"
                             aria-label="Home"
                         ></img>
                     </a>

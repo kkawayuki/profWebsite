@@ -61,7 +61,7 @@ function App() {
 
             <header className="site-header">
                 <div className="container header-row">
-                    <a href="about">
+                    <a href="#about">
                         <img
                             className="logo"
                             src="/circle2.png"
